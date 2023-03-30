@@ -17,7 +17,7 @@ def fibonacci_seq(n_termos):
 
 @cache
 def fibonacci(n_termo):
-    if n_termo < 1:
+    if n_termo <= 1:
         return 0
     if n_termo <= 2:
         return 1
@@ -25,7 +25,6 @@ def fibonacci(n_termo):
 
 
 if __name__ == '__main__':
-    # fibonacci_seq(10)
-    # print(fibonacci(10))
-    for i in range(4):
-        print(fibonacci(i))
+    for i in range(10):
+        print(fibonacci(i+1))
+    # print(fibonacci(1))
